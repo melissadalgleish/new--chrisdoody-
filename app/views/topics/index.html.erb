@@ -14,10 +14,10 @@
     <td><%= topic.title %></td>
     <td><%= topic.description %></td>
     <td><%= pluralize(topic.votes.length, "vote")%></td>
-    <td><%= button_to 'Up Vote', votes_path(topic_id: topic.id), method: :post %></td>
+    <td><%= button_to '+1', votes_path(topic_id: topic.id), method: :post %></td>
     <td><%= link_to 'Show', topic %></td>
     <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
-    <td><%= link_to 'Down Vote', topic, method: :delete, data: { confirm: 'Are you sure you want to be crazy?' } %></td>
+    <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure you want to be crazy?' } %></td>
   </tr>
 <% end %>
 </table>
