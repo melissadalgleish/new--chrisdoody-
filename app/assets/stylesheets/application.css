@@ -31,6 +31,9 @@ header {
 	color: #fff;
 	padding: 10px;
 	text-align: center;
+	background-image: url(d.png);
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 
 header h1 {
@@ -74,3 +77,9 @@ tbody tr {
 tbody tr:nth-child(even) {
 	background-color: #bbb;
 }
+
+a:link {color: red;}
+a:visited {color: red}
+a:hover {color: red}
+a:focus {color: red}
+a:active {color: red}
